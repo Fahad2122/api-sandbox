@@ -11,7 +11,9 @@ var Logger;
     function composeMessage(...args) {
         Logger.lastMessage = "";
         args.forEach((args) => {
-            Logger.lastMessage += args.toString() + " ";
+            if (arg !== undefined) {
+                Logger.lastMessage += arg.toString() + " ";
+            }
         });
     }
     //@ts-ignore
