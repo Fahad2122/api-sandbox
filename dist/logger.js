@@ -10,7 +10,7 @@ var Logger;
     //@ts-ignore
     function composeMessage(...args) {
         Logger.lastMessage = "";
-        args.forEach((args) => {
+        args.forEach((arg) => {
             if (arg !== undefined) {
                 Logger.lastMessage += arg.toString() + " ";
             }
